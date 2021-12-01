@@ -134,7 +134,7 @@ main {
 }
 
 .desktop {
-    background-image: url('./img/BG/pexels-tima-miroshnichenko-6611937.jpg');
+    background-image: url('/img/BG/pexels-tima-miroshnichenko-6611937.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
