@@ -47,10 +47,6 @@ header nav {
     height: 4rem;
 }
 
-.elrejt {
-    display: none;
-}
-
 .btn {
     font-size: 2.2rem;
 }
@@ -91,12 +87,49 @@ header ul li:hover {
     display: none;
 }
 
-column {
+header {
+    z-index: 2;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left:0;
+}
+
+.nav-2 {
+    z-index: 0;
+    width: 100vw;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav-list-column {
+    position: fixed;
+    left: 0;
+    top: 4rem;
+    background-color: rgba(34, 34, 34, 0.904);
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    color: #fff;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
+    margin: 0;
+
+}
+
+.nav-list-column li:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+.nav-list-column a {
+    margin: 0;
+}
+.nav-list-column li {
+    height: 4rem;
 }
 
 @media (max-width: 1400px) {
@@ -118,6 +151,10 @@ column {
     .menu-btn {
         display: block;
     }
+}
+
+.close-btn {
+    z-index: 10;
 }
 
 .inactive {
@@ -227,6 +264,10 @@ main {
         background-position: center center;
         height: 80vh;
     }
+}
+
+#welcome-section {
+    height: 100vh;
 }
 
 main section {
@@ -608,4 +649,6 @@ footer {
         }
     }
         
-    
+    .elrejt {
+        display: none;
+    }
