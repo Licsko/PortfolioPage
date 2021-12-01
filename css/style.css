@@ -134,7 +134,7 @@ main {
 }
 
 .desktop {
-    background-image: url('/img/BG/pexels-tima-miroshnichenko-6611937.jpg');
+    background-image: url('../img/BG/pexels-tima-miroshnichenko-6611937.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -480,22 +480,22 @@ section p{
     
 }
 .card .img3 {
-    background-image: url('/img/kalkapp.png');
+    background-image: url('../img/kalkapp.png');
 }
 .card .img4 {
-    background-image: url('/img/qapp.png');
+    background-image: url('../img/qapp.png');
 }
 .card .img5 {
-    background-image: url('/img/tribute_pg.png');
+    background-image: url('../img/tribute_pg.png');
 }
 .card .img6 {
-    background-image: url('/img/survey.png');
+    background-image: url('../img/survey.png');
 }
 .card .img7 {
-    background-image: url('/img/product_landing_pg.png');
+    background-image: url('../img/product_landing_pg.png');
 }
 .card .img8 {
-    background-image: url('/img/technical.png');
+    background-image: url('../img/technical.png');
 }
 
 .card .bottom-card {
