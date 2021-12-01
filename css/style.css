@@ -235,14 +235,20 @@ main {
         width: 100;
     }
 }
+@media (max-width: 1020px) {
+    .desktop {
+        background-size: 212%;
+    }
+}
 @media (max-width: 720px) {
     .desktop {
-        background-size: 1280px;
-        background-position: bottom center;
+        background-image: url('../img/BG/pexels-anna-nekrashevich-8533360.jpg');
+        background-size: 150%;
+        background-position: center center;
         padding: 4rem 0rem;
     }
     .desktop-content {
-        margin: 3rem 0 0 1.5rem;
+        margin: 12rem 0 0 .4rem;
     }
     .desktop-content h1 {
         font-size: 3rem;
@@ -253,14 +259,29 @@ main {
 }
 @media (max-width: 480px) {
     .desktop {
-        background-size: 224%;
+        background-image: url('../img/BG/pexels-pnw-production-8490075.jpg');
+        background-size: 180%;
         background-position: center center;
         height: 80vh;
+    }
+    .desktop-content {
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 0 0 -0.5rem;
+        padding: 10rem;
+        text-align: center;
+    }
+    .buttons {
+        justify-content: center;
+        transform: scale(1.3);
+    }
+    .button:first-of-type {
+        margin-top: 2rem;
     }
 }
 @media (max-width: 360px) {
     .desktop {
-        background-size: 1200px;
+        background-size: 230%;
         background-position: center center;
         height: 80vh;
     }
@@ -276,6 +297,7 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 @media (max-width: 1200px) {
     main section {
@@ -396,6 +418,18 @@ div.row {
     flex-flow: row wrap;
     justify-content: center;
 }
+.tanusitvanyok article:first-of-type img {
+    height: 240px;
+}
+.tanusitvanyok article:last-of-type img {
+    height: 200px;
+}
+
+@media (max-width: 480px) {
+    .tanusitvanyok img{
+    margin: 0 2rem;
+}
+}
 
 .tapasztalatok ul{
     display: flex;
@@ -403,6 +437,7 @@ div.row {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding: 0;
 }
 .tapasztalatok li {
     display: flex;
@@ -464,7 +499,7 @@ div.row {
 section div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
