@@ -134,7 +134,7 @@ header {
 
 @media (max-width: 1400px) {
     header a{
-        font-size: 1rem;
+        font-size: 1.7rem;
         margin: 3rem 1rem
     }
     .row a {
