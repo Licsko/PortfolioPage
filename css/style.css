@@ -170,6 +170,20 @@ main {
     color: #512416;    
 }
 
+main section {
+    padding: 4rem 11rem;
+    border-bottom: 2px solid #512416;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+@media (max-width: 1200px) {
+    main section {
+        padding: 4rem 6rem;
+    }
+}
+
 .desktop {
     background-image: url('../img/BG/pexels-tima-miroshnichenko-6611937.jpg');
     background-position: center center;
@@ -184,7 +198,6 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow-x: hidden;
 }
 .desktop-content {
     display: flex;
@@ -192,6 +205,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: 8rem 0 0 1.5rem;
+    overflow: hidden;
 
 }
 .desktop h1 {
@@ -291,20 +305,6 @@ main {
     height: 100vh;
 }
 
-main section {
-    padding: 4rem 11rem;
-    border-bottom: 2px solid #512416;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-}
-@media (max-width: 1200px) {
-    main section {
-        padding: 4rem 6rem;
-    }
-}
-
 section h2 {
     font-size: 2rem;
 }
@@ -331,6 +331,24 @@ article {
 }
 .row a.inactive {
     cursor: not-allowed;
+}
+
+.logo {
+    height: 8.8rem;
+    width: 8.8rem;
+    margin-top: 10px;    
+    margin-bottom: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    border-radius: 2rem;
+}
+    .box-shadows-css-logo {
+    background-color: #6a9aff;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,.2);
 }
 
 section .progress {
@@ -379,6 +397,11 @@ section .progress {
     background-color: #339af0;
     box-shadow: 3px 0 4px rgba(0, 0, 0, .4);
 }
+.box-shadows-css .progress-value {
+    animation: box-shadows-css 3s normal forwards;
+    background-color: #6a9aff;
+    box-shadow: 3px 0 4px rgba(0, 0, 0, .4);
+}
 
 .progress-value {
     /* box-shadow: 0 10px 40px -10px #fff; */
@@ -411,6 +434,10 @@ section .progress {
 @keyframes font-awesome {
     0% { width: 0; }
     100% { width: 89%; }
+  }
+@keyframes box-shadows-css {
+    0% { width: 0; }
+    100% { width: 98%; }
   }
 
 div.row {
